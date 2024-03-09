@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #160505f2;;
+    color: #faf4f4;
+    text-decoration: none;
+    
+}
+
+
+.navMenu {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-left:160px ;
+    padding: 110px;
+  }
+  
+  .navMenu a {
+    color:whitesmoke;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flexbox;
+  margin: 10px;
+    width: 80px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    
+  }
+  
+  .navMenu a:hover {
+    color:#1ace26 ;
+  }
+  
+  .navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background:#1ace26 ;
+    border-radius: 50%;
+    opacity: 0;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navMenu a:nth-child(1):hover ~ .dot {
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateX(110px);
+    transform: translateX(110px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateX(200px);
+    transform: translateX(200px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .navMenu a:nth-child(4):hover ~ .dot {
+    -webkit-transform: translateX(285px);
+    transform: translateX(285px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+  .logo{
+      padding: 20px;
+      padding-right: 0px;
+  font-size: 20px;
+  color:#FF5733 ;
+  display:flex;
+  margin: auto;
+  position: relative; /* Ensure the parent is relatively positioned */
+  }
+  .logo img{
+  
+  
+      height: 50px;
+      width: 200px;
+      box-shadow: 10px 10px 8px #6dff33 ; 
+     
+  }
+  
+  
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+form {
+  margin-left: 40px;
+    background-color: #1d0202d3;
+    padding: 60px;
+    max-width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="number"],
+input[type="submit"] {
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 10px;
+    border: 1px solid #41e50b;
+    border-radius: 10px;
+    font-size:40px ;
+    color: #002096;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #d22323;
+    cursor: pointer;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: #1ace26;
+    font-size:40px ;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 226, 23, 0.1);
+    font-size: 40px;
+    text-decoration: none;
+    
+}
+
+a {
+  font-size: 30px;
+    color: #007bff;
+    text-decoration: none;
+    border: #41e50b;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.img{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 70%;
+}
+.img img{
+    box-shadow: 15px 10px 8px #1ace26 ; /* Add shadow effect */
+    margin-bottom: 100px;
+    margin-left: 1200px;
+    margin-top: 45px;
+}
+form label[for="anime_name"] {
+    color: #f4f5f4;
+    text-shadow: 3px 2px 4px#c4e9cd ; 
+    font-size: 40px;
+    /* Your CSS styles for the label with the 'for' attribute 'anime_name' */
+}
+form label[for="num_recommendations"] {
+    color:whitesmoke ;
+    font-size: 40px;
+    
+    
+}
+
+
+form button {
+    font-size: 30px;
+    color: #7100e2;/* Your CSS styles for the button inside the form */
+}
+.t1 h1{
+
+  position: absolute;
+  top: 10%;
+  left: 5%;
+color: #9750e3;
+
+font-size: 100px;
+
+text-transform: uppercase;
+width: 40%;
+text-shadow: 10px 10px 8px #6dff33 ;
+
+
+}
+.t1 h2{
+  position: absolute;
+  top: 40%;
+  left: 5%;
+color: #9750e3;
+
+font-size: 70px;
+
+text-transform: uppercase;
+width: 40%;
+text-shadow: 10px 10px 8px #6dff33 ;
+animation: typing 10s steps(10, end), blink-caret .75s step-end infinite;
+
+
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+
